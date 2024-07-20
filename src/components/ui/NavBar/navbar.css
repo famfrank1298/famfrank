@@ -1,0 +1,50 @@
+.navbar-container {
+  background-color: var(--darkblue75);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 5rem;
+  position: fixed;
+  top: 0;
+  transform-origin: center;
+  animation: openNav 2s ease-in-out forwards;
+  border-bottom: 5px solid var(--darkblue90);
+}
+
+.logo {
+  font-size: var(--fontSizeXXLarge);
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-self: center;
+  font-size: var(--fontSizeSmall);
+  font-weight: var(--fontWeight);
+}
+
+.nav-list li {
+  height: 100%;
+  margin: auto;
+}
+
+.nav-list li:hover {
+  text-shadow: 3px 3px 4px var(--orange90);
+  transform: scale(1.5);
+}
+
+@keyframes openNav {
+  0% {
+    transform: scaleX(0);
+    opacity: 0;
+    border-radius: 50%;
+  }
+
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+    border-radius: 0%;
+  }
+}

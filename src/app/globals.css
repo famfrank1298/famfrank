@@ -74,10 +74,16 @@
     --orange75: #f8b779; /* Medium */
     --orange50: #f9c89b; /* Lighter */
     --orange25: #fbe0c0; /* Lightest */
+
+    --light-text-primary: #010038; /* Dark blue for primary text */
+    --light-text-secondary: #1a0b66; /* Slightly lighter blue for secondary text */
+    --light-text-accent: #3c444d; /* Dark gray for accent text */
+    --light-text-muted: #818d99; /* Mid gray for muted or less prominent text */
+    --grid-color: #818d993d;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: #010038;
     --foreground: 210 40% 98%;
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
@@ -114,6 +120,12 @@
     --orange75: #d06519; /* Medium for dark theme */
     --orange50: #b24e14; /* Lighter for dark theme */
     --orange25: #8a340f; /* Lightest for dark theme */
+
+    --text-primary: #f7f8fa; /* Light gray for primary text */
+    --text-secondary: #e1e6eb; /* Slightly darker light gray for secondary text */
+    --text-accent: #c3cbd4; /* Light gray for accent text */
+    --text-muted: #818d99; /* Mid gray for muted or less prominent text */
+    --grid-color: #020024;
   }
 }
 
@@ -126,13 +138,43 @@
   }
 }
 
+html {
+  cursor: none;
+}
+
 body {
-  background-color: var(--darkblue90);
+  background-color: var(--background);
   background-image: linear-gradient(
       0deg,
-      var(--darkblue100) 1px,
+      var(--grid-color) 1px,
       transparent 1px
     ),
-    linear-gradient(90deg, var(--darkblue100) 1px, transparent 1px);
+    linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
   background-size: 5px 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--text-primary);
+}
+
+.cursor {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 2.5px solid var(--orange100);
+  box-shadow: 0 0 10px var(--orange90);
+  transform: translate3d(-50%, -50%, 0);
+  z-index: var(--zindexToastMessages);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    border: 1.5px solid var(--orange100);
+  }
+
+  100% {
+    border: 2.5px solid var(--orange100);
+  }
 }
