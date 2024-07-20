@@ -29,6 +29,51 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
+
+    --black: #000000;
+    --errorColor: #dc4e41;
+    --alertColor: #f1813f;
+    --warningColor: #f8be34;
+    --successColor: #53a051;
+    --infoColor: #006d9c;
+
+    --fontWeightLight: 300;
+    --fontWeightNormal: 400;
+    --fontWeightSemiBold: 500;
+    --fontWeightBold: 700;
+    --fontWeightHeavy: 800;
+    --fontWeightExtraBold: 900;
+
+    --zindexLayer: 1000;
+    --zindexFixedNavbar: 1030;
+    --zindexModalBackdrop: 1040;
+    --zindexModal: 1050;
+    --zindexPopover: 1060;
+    --zindexToastMessages: 2000;
+
+    --spacingQuarter: 0.5rem;
+    --spacingHalf: 1rem;
+    --spacing: 2rem;
+    --fontSizeSmall: 1.2rem;
+    --fontSize: 1.4rem;
+    --fontSizeLarge: 1.6rem;
+    --fontSizeXLarge: 1.8rem;
+    --fontSizeXXLarge: 2.4rem;
+    --lineHeight: 2rem;
+    --inputHeight: 3.2rem;
+
+    /* Default colors */
+    --darkblue100: #010038; /* Original */
+    --darkblue90: #0c0d72; /* Slightly lighter */
+    --darkblue75: #2a2b9b; /* Medium */
+    --darkblue50: #4a4fbd; /* Lighter */
+    --darkblue25: #6a6fdf; /* Lightest */
+
+    --orange100: #f39422; /* Original */
+    --orange90: #f7a14c; /* Slightly lighter */
+    --orange75: #f8b779; /* Medium */
+    --orange50: #f9c89b; /* Lighter */
+    --orange25: #fbe0c0; /* Lightest */
   }
 
   .dark {
@@ -56,6 +101,19 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+
+    /* Dark theme colors */
+    --darkblue100: #010038; /* Original */
+    --darkblue90: #020024; /* Slightly lighter for dark theme */
+    --darkblue75: #03001b; /* Medium for dark theme */
+    --darkblue50: #040013; /* Lighter for dark theme */
+    --darkblue25: #06001e; /* Lightest for dark theme */
+
+    --orange100: #f39422; /* Original */
+    --orange90: #e57a1d; /* Slightly lighter for dark theme */
+    --orange75: #d06519; /* Medium for dark theme */
+    --orange50: #b24e14; /* Lighter for dark theme */
+    --orange25: #8a340f; /* Lightest for dark theme */
   }
 }
 
@@ -66,4 +124,15 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+body {
+  background-color: var(--darkblue90);
+  background-image: linear-gradient(
+      0deg,
+      var(--darkblue100) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, var(--darkblue100) 1px, transparent 1px);
+  background-size: 5px 5px;
 }
