@@ -1,5 +1,6 @@
 import Image from "next/image";
 import "./hero.css";
+import { Button } from "../Button/button";
 
 export default function Hero() {
   return (
@@ -15,6 +16,11 @@ export default function Hero() {
           <b className="highlight">React</b>, dedicated to delivering top-notch
           web applications through innovation and collaboration.
         </h4>
+        <Button className="resumeBtn">
+          <a href="/Mensah_Resume.pdf" target="_blank">
+            <h3>★ Resume ★</h3>
+          </a>
+        </Button>
       </div>
       <div className="imageContainer">
         <img src="images/heroPic.jpg" className="heroImage"></img>

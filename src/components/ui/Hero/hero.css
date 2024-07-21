@@ -59,3 +59,19 @@
   color: var(--orange90);
   font-weight: inherit;
 }
+
+.resumeBtn {
+  width: 40%;
+  border: 3px solid var(--orange90);
+  background-color: transparent;
+  margin-top: 3rem;
+  padding: 1rem;
+  color: var(--orange90);
+  font-weight: inherit;
+}
+
+.resumeBtn:hover {
+  background-color: var(--orange50);
+  color: var(--darkblue90);
+  box-shadow: 2px 2px 5px var(--orange90);
+}
