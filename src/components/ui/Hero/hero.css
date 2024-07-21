@@ -23,7 +23,7 @@
 
 @keyframes slideIn {
   0% {
-    transform: translateX(-5%);
+    transform: translateX(-3%);
   }
 
   100% {
@@ -35,16 +35,16 @@
   margin: 0 auto;
   padding: 2rem;
   width: 100%;
-  animation: slideIn 1s backwards;
+  /* animation: slideIn 2s backwards; */
 }
 
 @keyframes slideOut {
   0% {
-    transform: translateX(5%);
+    transform: translateX(-15%);
   }
 
   100% {
-    transform: translateX(-5%);
+    transform: translateX(0%);
   }
 }
 
