@@ -1,0 +1,61 @@
+.hero-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  width: 80%;
+  margin: 7rem auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroText {
+  width: 80%;
+  margin: auto;
+  padding: 1rem;
+  animation: slideIn 1s ease-in;
+}
+
+.heroText h1 {
+  line-height: var(--lineHeightLarge);
+}
+
+.heroText h3 {
+  line-height: var(--lineHeightMedium);
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-5%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.imageContainer {
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+  animation: slideIn 1s backwards;
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(5%);
+  }
+
+  100% {
+    transform: translateX(-5%);
+  }
+}
+
+.heroImage {
+  width: 70%;
+  box-shadow: 10px 10px 6px var(--orange90);
+  margin: 0 auto;
+}
+
+.highlight {
+  color: var(--orange90);
+  font-weight: inherit;
+}
