@@ -1,6 +1,7 @@
 "use client";
 
 import NavBar from "@/components/ui/NavBar/navbar";
+import Hero from "@/components/ui/Hero/hero";
 import { useEffect, useRef } from "react";
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
     <div>
       <div ref={cursorRef} className="cursor"></div>
       <NavBar />
+      <Hero />
     </div>
   );
 }

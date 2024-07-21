@@ -59,7 +59,9 @@
     --fontSizeLarge: 1.6rem;
     --fontSizeXLarge: 1.8rem;
     --fontSizeXXLarge: 2.4rem;
-    --lineHeight: 2rem;
+    --lineHeight: 3rem;
+    --lineHeightMedium: 4rem;
+    --lineHeightLarge: 5rem;
     --inputHeight: 3.2rem;
 
     /* Default colors */
@@ -80,6 +82,7 @@
     --light-text-accent: #3c444d; /* Dark gray for accent text */
     --light-text-muted: #818d99; /* Mid gray for muted or less prominent text */
     --grid-color: #818d993d;
+    --highlight: var(--orange90);
   }
 
   .dark {
@@ -140,6 +143,10 @@
 
 html {
   cursor: none;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -155,6 +162,8 @@ body {
   margin: 0;
   padding: 0;
   color: var(--text-primary);
+  width: 100%;
+  height: 100%;
 }
 
 .cursor {
@@ -177,4 +186,32 @@ body {
   100% {
     border: 2.5px solid var(--orange100);
   }
+}
+
+h1 {
+  @apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl;
+}
+
+h2 {
+  @apply scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0;
+}
+
+h3 {
+  @apply scroll-m-20 text-2xl font-semibold tracking-tight;
+}
+
+h4 {
+  @apply scroll-m-20 text-xl font-semibold tracking-tight;
+}
+
+p {
+  @apply leading-7 [&:not(:first-child)]:mt-6;
+}
+
+blockquote {
+  @apply mt-6 border-l-2 pl-6 italic;
+}
+
+.muted {
+  @apply text-sm text-muted-foreground;
 }
