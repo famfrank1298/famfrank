@@ -215,3 +215,20 @@ blockquote {
 .muted {
   @apply text-sm text-muted-foreground;
 }
+
+.section-title {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px var(--orange100);
+  font-size: 5rem;
+}
+
+.border-line {
+  width: 80%;
+  opacity: 50%;
+  height: 3px;
+  background-color: var(--orange100);
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
