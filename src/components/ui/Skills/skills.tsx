@@ -14,26 +14,6 @@ export default function Skills() {
         </ul>
       </div>
       <div className="skill-group">
-        <h3 className="skills-subheading">Databases</h3>
-        <ul className="skills-grid">
-          <Card
-            name="MongoDB"
-            link="/icons/mongodb.png"
-            color="rgba(86,176,69,0.5)"
-          />
-          <Card
-            name="MySQL"
-            link="/icons/mysql.png"
-            color="rgba(223,242,254,0.5)"
-          />
-          <Card
-            name="Supabase"
-            link="/icons/supabase.png"
-            color="rgba(35,178,68,0.5)"
-          />
-        </ul>
-      </div>
-      <div className="skill-group">
         <h3 className="skills-subheading">Web Development</h3>
         <ul className="skills-grid">
           <Card
@@ -79,7 +59,27 @@ export default function Skills() {
         </ul>
       </div>
       <div className="skill-group">
-        <h3 className="skills-subheading">Tools/Miscellaneous</h3>
+        <h3 className="skills-subheading">Databases</h3>
+        <ul className="skills-grid">
+          <Card
+            name="MongoDB"
+            link="/icons/mongodb.png"
+            color="rgba(86,176,69,0.5)"
+          />
+          <Card
+            name="MySQL"
+            link="/icons/mysql.png"
+            color="rgba(223,242,254,0.5)"
+          />
+          <Card
+            name="Supabase"
+            link="/icons/supabase.png"
+            color="rgba(35,178,68,0.5)"
+          />
+        </ul>
+      </div>
+      <div className="skill-group">
+        <h3 className="skills-subheading">General Tools</h3>
         <ul className="skills-grid">
           <Card
             name="Github"
@@ -102,6 +102,11 @@ export default function Skills() {
             link="/icons/postman.png"
             color="rgba(255,148,24,0.5)"
           />
+        </ul>
+      </div>
+      <div className="skill-group">
+        <h3 className="skills-subheading">Project Management Tools</h3>
+        <ul className="skills-grid">
           <Card
             name="Jira"
             link="/icons/jira.png"
