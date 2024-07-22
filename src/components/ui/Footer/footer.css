@@ -24,6 +24,7 @@
 .footerLinks a {
   width: 30px;
   height: 30px;
+  margin: 0 auto;
 }
 
 .footerLinks a:hover {
@@ -66,5 +67,55 @@
   }
   60% {
     transform: translateY(-10px);
+  }
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .footerLinks {
+    width: 40%;
+  }
+
+  .upArrow {
+    width: 6%;
+    border-radius: 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .footerLinks {
+    width: 40%;
+  }
+
+  .upArrow {
+    width: 10%;
+    border-radius: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .footerLinks {
+    width: 60%;
+  }
+
+  .upArrow {
+    width: 15%;
+    border-radius: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .footerLinks {
+    width: 70%;
+  }
+
+  .upArrow {
+    width: 20%;
+    border-radius: 100px;
+    padding: 0.2rem;
+  }
+
+  .footer h4 {
+    font-size: var(--fontSizeXSmall);
   }
 }

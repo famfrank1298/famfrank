@@ -1,9 +1,12 @@
 import "./footer.css";
+import { useMediaQuery } from "@/hooks/use-media-query";
 
 export default function Footer() {
   const handleScrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
+  const isSmallMobile = useMediaQuery("(max-width: 400px)");
 
   return (
     <div className="footer">
@@ -37,9 +40,13 @@ export default function Footer() {
           IconDuck
         </a>
       </p>
-      <div className="arrowContainer" onClick={handleScrollToTop}>
-        <div className="upArrow">⇑</div>
-      </div>
+      {!isSmallMobile ? (
+        <div className="arrowContainer mt-1" onClick={handleScrollToTop}>
+          <div className="upArrow">⇑</div>
+        </div>
+      ) : (
+        <></>
+      )}
     </div>
   );
 }
