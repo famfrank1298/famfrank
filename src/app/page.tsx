@@ -4,6 +4,7 @@ import NavBar from "@/components/ui/NavBar/navbar";
 import Hero from "@/components/ui/Hero/hero";
 import { useEffect, useRef } from "react";
 import Skills from "@/components/ui/Skills/skills";
+import Footer from "@/components/ui/Footer/footer";
 
 export default function Home() {
   const cursorRef = useRef<HTMLDivElement>(null);
@@ -28,6 +29,7 @@ export default function Home() {
       <NavBar />
       <Hero />
       <Skills />
+      <Footer />
     </div>
   );
 }
