@@ -1,0 +1,7 @@
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 80%;
+  margin: 0 auto;
+  gap: 3rem;
+}
