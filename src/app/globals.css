@@ -215,3 +215,44 @@ blockquote {
 .muted {
   @apply text-sm text-muted-foreground;
 }
+
+.section-title {
+  text-align: left;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px var(--orange100);
+  font-size: 3rem;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.border-line {
+  width: 70%;
+  opacity: 50%;
+  height: 2px;
+  background-color: var(--orange100);
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+/* Media Queries */
+@media (max-width: 1500px) {
+  .section-title {
+    width: 80%;
+  }
+
+  .border-line {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1140px) {
+  .section-title {
+    width: 90%;
+  }
+
+  .border-line {
+    width: 90%;
+  }
+}
