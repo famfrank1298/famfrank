@@ -60,11 +60,15 @@
     --fontSizeLarge: 1.6rem;
     --fontSizeXLarge: 1.8rem;
     --fontSizeXXLarge: 2.4rem;
+    --lineHeight: 1rem;
+    --lineHeightS: 2rem;
     --lineHeight: 3rem;
     --lineHeightMedium: 4rem;
     --lineHeightLarge: 5rem;
     --inputHeight: 3.2rem;
     --sectionWidth: 70%;
+    --sectionWidth2: 80%;
+    --sectionWidth3: 90%;
 
     /* Default colors */
     --darkblue100: #010038; /* Original */
@@ -241,20 +245,20 @@ blockquote {
 /* Media Queries */
 @media (max-width: 1500px) {
   .section-title {
-    width: 80%;
+    width: var(--sectionWidth2);
   }
 
   .border-line {
-    width: 80%;
+    width: var(--sectionWidth2);
   }
 }
 
 @media (max-width: 1140px) {
   .section-title {
-    width: 90%;
+    width: var(--sectionWidth3);
   }
 
   .border-line {
-    width: 90%;
+    width: var(--sectionWidth3);
   }
 }

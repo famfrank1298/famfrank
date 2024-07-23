@@ -1,3 +1,4 @@
+import { useMediaQuery } from "@/hooks/use-media-query";
 import "./cardP.css";
 
 interface ProjectCardProps {
@@ -8,6 +9,7 @@ interface ProjectCardProps {
   stack: string;
   webLink?: string;
   isGame?: boolean;
+  shortDesc: string;
 }
 
 const Card: React.FC<ProjectCardProps> = ({
@@ -18,15 +20,24 @@ const Card: React.FC<ProjectCardProps> = ({
   stack,
   webLink,
   isGame,
+  shortDesc,
 }) => {
   const link = webLink ? "Website" : "No Link";
+  const shortenDesc = useMediaQuery("(max-width: 800px)");
+  const mobileView = useMediaQuery("(max-width: 700px)");
 
   return (
     <div className="card-container">
       <h3 className="text-center mb-2">{title}</h3>
       <div className="image-border">
         <div className="desc">
-          <p>{desc}</p>
+          <p>
+            {mobileView
+              ? shortDesc
+              : !shortenDesc
+              ? desc
+              : desc.substring(0, 60) + "..."}
+          </p>
           <a href={webLink} target="_blank">
             {isGame ? (
               <p className="urlP">Play Now</p>

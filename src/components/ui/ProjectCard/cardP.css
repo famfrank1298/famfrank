@@ -66,3 +66,57 @@
   background-color: var(--text-primary);
   color: var(--orange90);
 }
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Media Queries */
+@media (max-width: 1000px) {
+  .buttonText {
+    padding: 0.3em 0.8em;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 870px) {
+  .desc {
+    padding: 0 1rem;
+  }
+
+  .desc p {
+    font-size: var(--fontSizeXSmall);
+  }
+
+  .urlP {
+    padding: 0.1rem 0.6rem;
+    margin: 0.6rem auto;
+  }
+
+  .buttonText {
+    padding: 0.2rem 0.6rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .image-border:hover .buttonText {
+    opacity: 0;
+    animation: disappear 1s ease-in;
+  }
+
+  .desc p {
+    transform: scale(0.9);
+  }
+}
+
+@media (max-width: 600px) {
+  .card-container h4 {
+    font-size: var(--fontSizeXSmall);
+  }
+}
