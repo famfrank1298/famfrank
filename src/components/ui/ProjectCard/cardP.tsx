@@ -7,6 +7,7 @@ interface ProjectCardProps {
   date: string;
   stack: string;
   webLink?: string;
+  isGame?: boolean;
 }
 
 const Card: React.FC<ProjectCardProps> = ({
@@ -16,7 +17,10 @@ const Card: React.FC<ProjectCardProps> = ({
   date,
   stack,
   webLink,
+  isGame,
 }) => {
+  const link = webLink ? "Website" : "No Link";
+
   return (
     <div className="card-container">
       <h3 className="text-center mb-2">{title}</h3>
@@ -24,7 +28,11 @@ const Card: React.FC<ProjectCardProps> = ({
         <div className="desc">
           <p>{desc}</p>
           <a href={webLink} target="_blank">
-            <p className="urlP">Website</p>
+            {isGame ? (
+              <p className="urlP">Play Now</p>
+            ) : (
+              <p className="urlP">{link}</p>
+            )}
           </a>
         </div>
         <img className="pImage" src={imgLink}></img>

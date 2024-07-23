@@ -64,6 +64,7 @@
     --lineHeightMedium: 4rem;
     --lineHeightLarge: 5rem;
     --inputHeight: 3.2rem;
+    --sectionWidth: 70%;
 
     /* Default colors */
     --darkblue100: #010038; /* Original */
@@ -223,13 +224,13 @@ blockquote {
   margin-bottom: 1.5rem;
   text-shadow: 2px 2px 4px var(--orange100);
   font-size: 3rem;
-  width: 70%;
+  width: var(--sectionWidth);
   margin-left: auto;
   margin-right: auto;
 }
 
 .border-line {
-  width: 70%;
+  width: var(--sectionWidth);
   opacity: 50%;
   height: 2px;
   background-color: var(--orange100);

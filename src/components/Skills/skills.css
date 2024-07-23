@@ -5,7 +5,7 @@
 }
 
 .skill-group {
-  width: 70%;
+  width: var(--sectionWidth);
   margin: 0 auto;
 }
 
