@@ -1,7 +1,8 @@
 import { useMediaQuery } from "@/hooks/use-media-query";
-import { ModeToggle } from "../ModeToggle/modetoggle";
+import { ModeToggle } from "../ui/ModeToggle/modetoggle";
 import "./navbar.css";
-import { Hamburger } from "../MiniDropdown/hamburger";
+import { Hamburger } from "../ui/MiniDropdown/hamburger";
+import Link from "next/link";
 
 export default function Navbar() {
   const isMobile = useMediaQuery("(max-width: 680px)");
@@ -21,9 +22,15 @@ export default function Navbar() {
           </ul>
         ) : (
           <ul className="nav-list">
-            <li>About</li>
-            <li>Skills</li>
-            <li>Projects</li>
+            <li>
+              <Link href="#">About</Link>
+            </li>
+            <li>
+              <Link href="#skills">Skills</Link>
+            </li>
+            <li>
+              <Link href="#projects">Projects</Link>
+            </li>
             <li>Contact</li>
             <li>
               <ModeToggle />

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import "./hero.css";
-import { Button } from "../Button/button";
+import { Button } from "../ui/Button/button";
 import { useMediaQuery } from "@/hooks/use-media-query";
 
 export default function Hero() {
