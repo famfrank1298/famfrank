@@ -37,8 +37,8 @@ ul {
 
 .nav-list li:hover {
   text-shadow: 3px 3px 4px var(--orange90);
-  transform: scale(1.5);
-  animation: enlarge 0.5s ease-in-out;
+  animation: enlarge 0.5s ease-in;
+  transform: scale(1.2);
 }
 
 @keyframes enlarge {
@@ -47,7 +47,7 @@ ul {
   }
 
   100% {
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
 }
 

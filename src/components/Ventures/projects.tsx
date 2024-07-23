@@ -6,7 +6,7 @@ export default function Projects() {
   const shortDate = useMediaQuery("(max-width: 880px)");
 
   return (
-    <div>
+    <div id="projects">
       <h1 className="section-title">Projects</h1>
       <hr className="border-line" />
       <div className="project-grid">

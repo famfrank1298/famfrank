@@ -53,6 +53,19 @@
 .image-border:hover .desc {
   opacity: 90%;
   max-height: 100%;
+  animation: displayText 1s ease-in;
+}
+
+@keyframes displayText {
+  0% {
+    opacity: 0%;
+    max-height: 0%;
+  }
+
+  100% {
+    opacity: 90%;
+    max-height: 100%;
+  }
 }
 
 .urlP {
