@@ -31,7 +31,9 @@ export default function Navbar() {
             <li>
               <Link href="#projects">Projects</Link>
             </li>
-            <li>Contact</li>
+            <li>
+              <a href="mailto:mensahfrank330@gmail.com">Contact</a>
+            </li>
             <li>
               <ModeToggle />
             </li>
