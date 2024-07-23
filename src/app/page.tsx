@@ -3,8 +3,9 @@
 import NavBar from "@/components/ui/NavBar/navbar";
 import Hero from "@/components/ui/Hero/hero";
 import { useEffect, useRef } from "react";
-import Skills from "@/components/ui/Skills/skills";
+import Skills from "@/components/Skills/skills";
 import Footer from "@/components/ui/Footer/footer";
+import Projects from "@/components/Ventures/projects";
 
 export default function Home() {
   const cursorRef = useRef<HTMLDivElement>(null);
@@ -25,9 +26,10 @@ export default function Home() {
 
   return (
     <div>
-      <div ref={cursorRef} className="cursor"></div>
+      {/* <div ref={cursorRef} className="cursor"></div> */}
       <NavBar />
       <Hero />
+      <Projects />
       <Skills />
       <Footer />
     </div>

@@ -1,0 +1,26 @@
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: var(--sectionWidth);
+  margin: 0 auto;
+  gap: 3rem;
+}
+
+/* Media Query */
+@media (max-width: 1500px) {
+  .project-grid {
+    width: var(--sectionWidth2);
+  }
+}
+
+@media (max-width: 1140px) {
+  .project-grid {
+    width: var(--sectionWidth3);
+  }
+}
+
+@media (max-width: 485px) {
+  .project-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

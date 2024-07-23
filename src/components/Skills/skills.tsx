@@ -1,4 +1,4 @@
-import Card from "../SkillCard/card";
+import Card from "../ui/SkillCard/cardS";
 import "./skills.css";
 
 export default function Skills() {

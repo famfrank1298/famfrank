@@ -1,5 +1,5 @@
 .footer {
-  width: 70%;
+  width: var(--sectionWidth);
   padding-top: 4rem;
   padding-bottom: 1rem;
   margin-top: 4rem;
