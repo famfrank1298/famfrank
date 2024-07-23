@@ -30,6 +30,14 @@ export default function Projects() {
           date="May 2023"
           stack="React, Javascript, Supabase"
         />
+        <Card
+          title="Car Crash Tracker"
+          imgLink="/projectSC/cct_sc.png"
+          desc="Filter through the City of Chicago Car Crash database and check the weather at a given latitude and longitude"
+          date="September 2022"
+          stack="Replit, Javascript, Google Maps API"
+          webLink="https://da1c761d-1709-460b-a4f5-f4c44b1d02e5-00-3d9m45rr6e7t1.janeway.replit.dev/"
+        />
       </div>
       <h1 className="section-title">Games</h1>
       <hr className="border-line" />
