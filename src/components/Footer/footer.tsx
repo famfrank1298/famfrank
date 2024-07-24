@@ -21,7 +21,7 @@ export default function Footer() {
           <img src="/footer/email.png"></img>
         </a>
       </div>
-      <h4>Copyright © Frank Mensah 2024</h4>
+      <h4>Made with ❤️ by Frank Mensah</h4>
       <p className="opacity-50 mt-0 text-center">
         Icons by{" "}
         <a
