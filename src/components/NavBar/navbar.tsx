@@ -4,6 +4,12 @@ import "./navbar.css";
 import { Hamburger } from "../ui/MiniDropdown/hamburger";
 import Link from "next/link";
 
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card";
+
 export default function Navbar() {
   const isMobile = useMediaQuery("(max-width: 680px)");
   const handleScrollToTop = () => {
@@ -12,11 +18,22 @@ export default function Navbar() {
 
   return (
     <div className="navbar-container">
-      <h1 className="logo" onClick={handleScrollToTop}>
-        <Link href="#" className="link-li">
-          𝔽𝔸𝕄
-        </Link>
-      </h1>
+      <HoverCard>
+        <HoverCardTrigger asChild>
+          <h1 className="logo" onClick={handleScrollToTop}>
+            <Link href="#" className="link-li">
+              𝔽𝔸𝕄
+            </Link>
+          </h1>
+        </HoverCardTrigger>
+        <HoverCardContent className="w-60 flex justify-start">
+          <div className="hover-logo text-center">
+            <p>
+              My full name initials are <b>F.A.M</b> (Frank Antwi Mensah)😎
+            </p>
+          </div>
+        </HoverCardContent>
+      </HoverCard>
       <div>
         {isMobile ? (
           <ul className="nav-list">
