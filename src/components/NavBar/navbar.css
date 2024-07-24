@@ -10,10 +10,12 @@
   transform-origin: center;
   animation: openNav 1s ease-in-out forwards;
   border-bottom: 5px solid var(--darkblue90);
+  z-index: var(--zindexPopover);
 }
 
 .logo {
   font-size: var(--fontSizeXXLarge);
+  color: var(--text-primary);
 }
 
 ul {
@@ -33,6 +35,7 @@ ul {
 .nav-list li {
   height: 100%;
   margin: auto;
+  color: var(--text-primary);
 }
 
 .nav-list li:hover {

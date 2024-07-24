@@ -14,7 +14,9 @@ export default function Hero() {
         {isMobile ? (
           <h3 className="highlight">FullStack Developer</h3>
         ) : (
-          <h3 className="highlight">FullStack Developer and AI Enthusiast </h3>
+          <h3 className="highlight transform transition-transform duration-300 hover:scale-105">
+            FullStack Developer and AI Enthusiast{" "}
+          </h3>
         )}
 
         <h4>

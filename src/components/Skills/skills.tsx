@@ -1,9 +1,11 @@
+import ScrollAnimation from "../ScrollAnimation/scrollAnimation";
 import Card from "../ui/SkillCard/cardS";
 import "./skills.css";
 
 export default function Skills() {
   return (
-    <div id="skills">
+    <div id="skills" className="animate">
+      <ScrollAnimation />
       <h1 className="section-title">Skills</h1>
       <hr className="border-line" />
       <div className="skill-group">
