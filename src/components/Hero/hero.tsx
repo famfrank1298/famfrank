@@ -10,7 +10,7 @@ export default function Hero() {
     <div className="hero-container">
       <div className="heroText">
         <h4>Hello All! I am</h4>
-        <h1>Frank Mensah </h1>
+        <h1>Frank A Mensah </h1>
         {isMobile ? (
           <h3 className="highlight">FullStack Developer</h3>
         ) : (
