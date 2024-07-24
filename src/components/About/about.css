@@ -1,0 +1,17 @@
+.about-text {
+  width: var(--sectionWidth2);
+  margin: 0 auto;
+}
+
+/* Media Queries */
+@media (max-width: 1500px) {
+  .about-text {
+    width: var(--sectionWidth2);
+  }
+}
+
+@media (max-width: 1140px) {
+  .about-text {
+    width: var(--sectionWidth3);
+  }
+}
