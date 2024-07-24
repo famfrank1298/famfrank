@@ -11,6 +11,15 @@ export default function Projects() {
       <hr className="border-line" />
       <div className="project-grid">
         <Card
+          title="Portfolio Website"
+          imgLink="/projectSC/portfolio_sc.png"
+          desc="I'm happy to say this but you are on it right now!"
+          date="July 2024"
+          stack="NextJS, Typescript, Shadcn/UI"
+          shortDesc="You are on it! :)"
+          webLink="https://famfrank.vercel.app/"
+        />
+        <Card
           title="Find Your Roof"
           imgLink="/projectSC/fyr_sc.png"
           desc="A centralized platform aimed to assist homeless individuals in the City of Chicago find homes, jobs, and other organizations"
@@ -23,7 +32,7 @@ export default function Projects() {
           title="Omega Delta Phi"
           imgLink="/projectSC/odphi_sc.png"
           desc="The inaugural fraternity website of Omega Delta Phi - Beta Iota Chapter at UIC."
-          date={shortDate ? "Dec 2023" : "December 2022"}
+          date={shortDate ? "Dec 2023" : "December 2023"}
           stack="Next.js, Typescript, Tailwind CSS"
           webLink="https://omegadeltaphi-bi.vercel.app/"
           shortDesc="Beta Iota Fraternity Website"
