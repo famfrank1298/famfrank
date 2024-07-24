@@ -54,6 +54,9 @@
   opacity: 90%;
   max-height: 100%;
   animation: displayText 1s ease-in;
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"><circle cx="15" cy="15" r="10" fill="darkblue" stroke="orange" stroke-width="2"/></svg>')
+      15 15,
+    auto;
 }
 
 @keyframes displayText {
@@ -78,6 +81,9 @@
 .urlP:hover {
   background-color: var(--text-primary);
   color: var(--orange90);
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"><circle cx="15" cy="15" r="10" fill="darkblue" stroke="orange" stroke-width="2"/></svg>')
+      15 15,
+    auto;
 }
 
 @keyframes disappear {

@@ -6,10 +6,8 @@ import { useEffect, useRef } from "react";
 import Skills from "@/components/Skills/skills";
 import Footer from "@/components/Footer/footer";
 import Projects from "@/components/Ventures/projects";
-
 import posthog from "posthog-js";
 import { PostHogProvider } from "posthog-js/react";
-import Cursor from "@/components/ui/Cursor/cursor";
 
 if (typeof window !== "undefined") {
   // checks that we are client-side
@@ -27,7 +25,6 @@ export default function Home() {
   return (
     <PostHogProvider client={posthog}>
       <div>
-        <Cursor />
         <NavBar />
         <Hero />
         <Projects />

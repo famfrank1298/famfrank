@@ -73,6 +73,9 @@
   background-color: var(--orange50);
   color: var(--darkblue90);
   box-shadow: 2px 2px 5px var(--orange90);
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"><circle cx="15" cy="15" r="10" fill="darkblue" stroke="orange" stroke-width="2"/></svg>')
+      15 15,
+    auto;
 }
 
 /* Media Queries */
