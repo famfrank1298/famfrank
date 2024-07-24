@@ -6,10 +6,17 @@ import Link from "next/link";
 
 export default function Navbar() {
   const isMobile = useMediaQuery("(max-width: 680px)");
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <div className="navbar-container">
-      <h1 className="logo">𝔽𝔸𝕄</h1>
+      <h1 className="logo" onClick={handleScrollToTop}>
+        <Link href="#" className="link-li">
+          𝔽𝔸𝕄
+        </Link>
+      </h1>
       <div>
         {isMobile ? (
           <ul className="nav-list">
@@ -23,16 +30,24 @@ export default function Navbar() {
         ) : (
           <ul className="nav-list">
             <li>
-              <Link href="#">About</Link>
+              <Link href="#" className="link-li">
+                About
+              </Link>
             </li>
             <li>
-              <Link href="#skills">Skills</Link>
+              <Link href="#skills" className="link-li">
+                Skills
+              </Link>
             </li>
             <li>
-              <Link href="#projects">Projects</Link>
+              <Link href="#projects" className="link-li">
+                Projects
+              </Link>
             </li>
             <li>
-              <a href="mailto:mensahfrank330@gmail.com">Contact</a>
+              <a href="mailto:mensahfrank330@gmail.com" className="link-li">
+                Contact
+              </a>
             </li>
             <li>
               <ModeToggle />
