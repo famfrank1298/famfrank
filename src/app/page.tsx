@@ -9,6 +9,7 @@ import Projects from "@/components/Ventures/projects";
 
 import posthog from "posthog-js";
 import { PostHogProvider } from "posthog-js/react";
+import Cursor from "@/components/ui/Cursor/cursor";
 
 if (typeof window !== "undefined") {
   // checks that we are client-side
@@ -23,26 +24,10 @@ if (typeof window !== "undefined") {
 }
 
 export default function Home() {
-  const cursorRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      if (cursorRef.current) {
-        cursorRef.current.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
-      }
-    };
-
-    window.addEventListener("mousemove", handleMouseMove);
-
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-    };
-  }, []);
-
   return (
     <PostHogProvider client={posthog}>
       <div>
-        {/* <div ref={cursorRef} className="cursor"></div> */}
+        <Cursor />
         <NavBar />
         <Hero />
         <Projects />

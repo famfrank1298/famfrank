@@ -1,3 +1,4 @@
+import ScrollAnimation from "@/components/ScrollAnimation/scrollAnimation";
 import "./cardS.css";
 
 interface SkillCardProps {
@@ -8,7 +9,8 @@ interface SkillCardProps {
 
 const Card: React.FC<SkillCardProps> = ({ name, link, color }) => {
   return (
-    <div className="cardContainer">
+    <div className="cardContainer animate">
+      <ScrollAnimation />
       <div className="border" style={{ backgroundColor: color }}>
         <img className="cardImg" src={link} alt="logo" />
       </div>

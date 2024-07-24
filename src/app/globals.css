@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: #c3cbd4;
     --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -70,23 +70,23 @@
     --sectionWidth2: 80%;
     --sectionWidth3: 90%;
 
-    /* Default colors */
     --darkblue100: #010038; /* Original */
-    --darkblue90: #0c0d72; /* Slightly lighter */
-    --darkblue75: #2a2b9b; /* Medium */
-    --darkblue50: #4a4fbd; /* Lighter */
-    --darkblue25: #6a6fdf; /* Lightest */
+    --darkblue90: #020024; /* Slightly lighter for dark theme */
+    --darkblue75: #03001b; /* Medium for dark theme */
+    --darkblue50: #040013; /* Lighter for dark theme */
+    --darkblue25: #06001e; /* Lightest for dark theme */
 
     --orange100: #f39422; /* Original */
-    --orange90: #f7a14c; /* Slightly lighter */
-    --orange75: #f8b779; /* Medium */
-    --orange50: #f9c89b; /* Lighter */
-    --orange25: #fbe0c0; /* Lightest */
+    --orange90: #e57a1d; /* Slightly lighter for dark theme */
+    --orange75: #d06519; /* Medium for dark theme */
+    --orange50: #b24e14; /* Lighter for dark theme */
+    --orange25: #8a340f; /* Lightest for dark theme */
 
-    --light-text-primary: #010038; /* Dark blue for primary text */
-    --light-text-secondary: #1a0b66; /* Slightly lighter blue for secondary text */
-    --light-text-accent: #3c444d; /* Dark gray for accent text */
-    --light-text-muted: #818d99; /* Mid gray for muted or less prominent text */
+    --text-primary: #f7f8fa; /* Light gray for primary text */
+    --text-secondary: #e1e6eb; /* Slightly darker light gray for secondary text */
+    --text-accent: #c3cbd4; /* Light gray for accent text */
+    --text-muted: #818d99; /* Mid gray for muted or less prominent text */
+    --title-color: #f7f8fa;
     --grid-color: #818d993d;
     --highlight: var(--orange90);
   }
@@ -116,24 +116,6 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
-
-    /* Dark theme colors */
-    --darkblue100: #010038; /* Original */
-    --darkblue90: #020024; /* Slightly lighter for dark theme */
-    --darkblue75: #03001b; /* Medium for dark theme */
-    --darkblue50: #040013; /* Lighter for dark theme */
-    --darkblue25: #06001e; /* Lightest for dark theme */
-
-    --orange100: #f39422; /* Original */
-    --orange90: #e57a1d; /* Slightly lighter for dark theme */
-    --orange75: #d06519; /* Medium for dark theme */
-    --orange50: #b24e14; /* Lighter for dark theme */
-    --orange25: #8a340f; /* Lightest for dark theme */
-
-    --text-primary: #f7f8fa; /* Light gray for primary text */
-    --text-secondary: #e1e6eb; /* Slightly darker light gray for secondary text */
-    --text-accent: #c3cbd4; /* Light gray for accent text */
-    --text-muted: #818d99; /* Mid gray for muted or less prominent text */
     --grid-color: #020024;
   }
 }
@@ -148,7 +130,7 @@
 }
 
 html {
-  /* cursor: none; */
+  cursor: none;
   width: 100%;
   height: 100%;
   margin: 0;
@@ -168,21 +150,35 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  color: var(--text-primary);
   width: 100%;
   height: 100%;
 }
 
 .cursor {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
+  pointer-events: none;
   border: 2.5px solid var(--orange100);
   box-shadow: 0 0 10px var(--orange90);
   transform: translate3d(-50%, -50%, 0);
   z-index: var(--zindexToastMessages);
   animation: pulse 2s ease-in-out infinite;
+  transform: translate(-50%, -50%);
+}
+
+.animate {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 2s ease-out, transform 1s ease-out;
+}
+
+.animate.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @keyframes pulse {

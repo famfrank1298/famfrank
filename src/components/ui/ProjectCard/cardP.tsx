@@ -1,5 +1,6 @@
 import { useMediaQuery } from "@/hooks/use-media-query";
 import "./cardP.css";
+import ScrollAnimation from "@/components/ScrollAnimation/scrollAnimation";
 
 interface ProjectCardProps {
   title: string;
@@ -27,7 +28,8 @@ const Card: React.FC<ProjectCardProps> = ({
   const mobileView = useMediaQuery("(max-width: 700px)");
 
   return (
-    <div className="card-container">
+    <div className="card-container animate">
+      <ScrollAnimation />
       <h3 className="text-center mb-2">{title}</h3>
       <div className="image-border">
         <div className="desc">
