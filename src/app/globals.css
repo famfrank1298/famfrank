@@ -225,6 +225,7 @@ blockquote {
 @media (max-width: 1500px) {
   .section-title {
     width: var(--sectionWidth2);
+    opacity: 0.95;
   }
 
   .border-line {
@@ -235,6 +236,7 @@ blockquote {
 @media (max-width: 1140px) {
   .section-title {
     width: var(--sectionWidth3);
+    opacity: 0.95;
   }
 
   .border-line {
