@@ -13,9 +13,9 @@ export default function About() {
         <b className="highlight">helping others was always a passion of mine</b>
         , I never felt drawn to those paths. <br />
         <br />
-        My true calling emerged during my junior year of high school when I
-        discovered computer science. Fascinated by its complexity and
-        creativity, I realized this field was where I could{" "}
+        During my junior year of high school, we were required to take a
+        computer science class. Fascinated by its complexity and creativity, I
+        realized this was a field where I could{" "}
         <b className="highlight">build meaningful solutions</b> and make a{" "}
         <b className="highlight">tangible impact on my community</b> on my
         terms. After graduating from the{" "}

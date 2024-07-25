@@ -47,8 +47,8 @@ export default function Navbar() {
         ) : (
           <ul className="nav-list">
             <li>
-              <Link href="#" className="link-li">
-                About
+              <Link href="#roadmap" className="link-li">
+                Roadmap
               </Link>
             </li>
             <li>
