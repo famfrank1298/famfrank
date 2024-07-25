@@ -1,21 +1,34 @@
 .carousel-container {
-  width: 40%;
+  width: 35%;
   margin: 0 auto;
-  border-radius: 0;
 }
 
 .card-div {
-  box-shadow: 8px 8px 16px var(--orange50);
+  box-shadow: 4px 4px 10px var(--orange50);
   border-radius: 100px;
   margin: auto;
-  background: linear-gradient(45deg, var(--orange75), var(--orange100));
+  background: linear-gradient(45deg, var(--orange75), var(--orange90));
 }
 
 .card-div:hover {
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"><circle cx="15" cy="15" r="10" fill="darkblue" stroke="orange" stroke-width="2"/></svg>')
       15 15,
     auto;
-  background: linear-gradient(45deg, var(--orange100), var(--orange75));
+  animation: colorSpin 1s ease-in-out infinite;
+}
+
+@keyframes colorSpin {
+  0% {
+    background: linear-gradient(45deg, var(--orange75), var(--orange90));
+  }
+
+  50% {
+    background: linear-gradient(45deg, var(--orange90), var(--orange100));
+  }
+
+  100% {
+    background: linear-gradient(45deg, var(--orange100), var(--orange75));
+  }
 }
 
 .card-div:hover .date-tag {
@@ -41,23 +54,23 @@
 }
 
 .position-tag {
-  font-size: var(--fontSizeXXLarge);
+  font-size: var(--fontSizeXLarge);
   font-weight: var(--fontWeightBold);
   text-decoration: underline;
 }
 
 .company-tag {
-  font-size: var(--fontSizeXLarge);
+  font-size: var(--fontSizeLarge);
   font-weight: var(--fontWeightBold);
 }
 
 .date-tag {
-  font-size: var(--fontSizeLarge);
+  font-size: var(--fontSize);
   font-weight: var(--fontWeightSemiBold);
 }
 
 .desc-tag {
-  font-size: var(--fontSizeLarge);
+  font-size: var(--fontSize);
   font-weight: var(--fontWeightSemiBold);
 }
 
@@ -67,4 +80,87 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 1285px) {
+  .carousel-container {
+    width: 50%;
+    transform: scale(0.9);
+  }
+}
+
+@media (max-width: 890px) {
+  .carousel-container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 685px) {
+  .card-div {
+    border-radius: 80px;
+  }
+
+  .card-div:hover .date-tag {
+    font-size: var(--fontSizeLarge);
+  }
+
+  .position-tag {
+    font-size: var(--fontSizeLarge);
+  }
+
+  .company-tag {
+    font-size: var(--fontSize);
+  }
+
+  .date-tag {
+    font-size: var(--fontSizeSmall);
+  }
+
+  .desc-tag {
+    font-size: var(--fontSizeSmall);
+  }
+}
+
+@media (max-width: 545px) {
+  .carousel-container {
+    transform: scale(0.95);
+  }
+
+  .card-tag {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 475px) {
+  .card-div:hover .date-tag {
+    font-size: var(--fontSize);
+  }
+
+  .position-tag {
+    font-size: var(--fontSize);
+  }
+
+  .company-tag {
+    font-size: var(--fontSizeSmall);
+  }
+
+  .date-tag {
+    font-size: var(--fontSizeXSmall);
+  }
+
+  .desc-tag {
+    font-size: var(--fontSizeXSmall);
+  }
+
+  .image-tag {
+    width: 50%;
+  }
+}
+
+@media (max-width: 400px) {
+  .card-tag {
+    height: 450px;
+    overflow-y: auto;
+  }
 }
