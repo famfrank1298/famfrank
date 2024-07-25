@@ -133,8 +133,18 @@
 }
 
 @media (max-width: 475px) {
+  @keyframes noop {
+    0% {
+      transform: none;
+    }
+    100% {
+      transform: none;
+    }
+  }
+
   .card-div:hover .date-tag {
-    font-size: var(--fontSize);
+    font-size: var(--fontSizeXSmall);
+    animation: noop 0s;
   }
 
   .position-tag {
