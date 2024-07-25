@@ -70,22 +70,22 @@
     --sectionWidth2: 80%;
     --sectionWidth3: 90%;
 
-    --darkblue100: #010038; /* Original */
-    --darkblue90: #020024; /* Slightly lighter for dark theme */
-    --darkblue75: #03001b; /* Medium for dark theme */
-    --darkblue50: #040013; /* Lighter for dark theme */
-    --darkblue25: #06001e; /* Lightest for dark theme */
+    --darkblue100: #1a1a68;
+    --darkblue90: #2e2e84;
+    --darkblue75: #4646a0;
+    --darkblue50: #6969bd;
+    --darkblue25: #8d8dd9;
 
-    --orange100: #f39422; /* Original */
-    --orange90: #e57a1d; /* Slightly lighter for dark theme */
-    --orange75: #d06519; /* Medium for dark theme */
-    --orange50: #b24e14; /* Lighter for dark theme */
-    --orange25: #8a340f; /* Lightest for dark theme */
+    --orange100: #d87f1f;
+    --orange90: #c86e1b;
+    --orange75: #b25a17;
+    --orange50: #964611;
+    --orange25: #732e0b;
 
-    --text-primary: #f7f8fa; /* Light gray for primary text */
-    --text-secondary: #e1e6eb; /* Slightly darker light gray for secondary text */
-    --text-accent: #c3cbd4; /* Light gray for accent text */
-    --text-muted: #818d99; /* Mid gray for muted or less prominent text */
+    --text-primary: #f7f8fa;
+    --text-secondary: #e1e6eb;
+    --text-accent: #c3cbd4;
+    --text-muted: #818d99;
     --title-color: #f7f8fa;
     --grid-color: #818d993d;
     --highlight: var(--orange90);
@@ -117,6 +117,18 @@
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
     --grid-color: #020024;
+
+    --darkblue100: #010038;
+    --darkblue90: #020024;
+    --darkblue75: #03001b;
+    --darkblue50: #040013;
+    --darkblue25: #06001e;
+
+    --orange100: #f39422;
+    --orange90: #e57a1d;
+    --orange75: #d06519;
+    --orange50: #b24e14;
+    --orange25: #8a340f;
   }
 }
 
