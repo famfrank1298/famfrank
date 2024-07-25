@@ -2,9 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import Script from "next/script";
-import { GoogleAnalytics } from "@next/third-parties/google";
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -23,7 +20,7 @@ export default function RootLayout({
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-DX2PYGWYXM"
-        ></script>
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -45,7 +42,6 @@ export default function RootLayout({
           {children}
         </ThemeProvider>
       </body>
-      <GoogleAnalytics gaId="G-DX2PYGWYXM" />
     </html>
   );
 }
