@@ -29,10 +29,10 @@ export function CarouselRoad() {
     },
     {
       company: "Headstarter AI",
-      position: "Headstarter Fellowship",
+      position: "Software Engineer Fellow",
       duration: "July 2024 - Present",
       logo: "/logos/headstarter_logo.png",
-      desc: "Still learning and developing, to be continued...",
+      desc: "Building multiple AI centric Apps and receiving coaching from many well established individuals in the field",
     },
   ];
   return (
