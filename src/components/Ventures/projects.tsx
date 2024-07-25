@@ -55,7 +55,7 @@ export default function Projects() {
           shortDesc="Car Crash and Weather Tracker"
         />
       </div>
-      <h1 className="section-title">Games</h1>
+      {/* <h1 className="section-title">Games</h1>
       <hr className="border-line" />
       <div className="project-grid">
         <Card
@@ -68,7 +68,7 @@ export default function Projects() {
           isGame={true}
           shortDesc="Mini Arrow Game"
         />
-      </div>
+      </div> */}
     </div>
   );
 }
