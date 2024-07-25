@@ -11,7 +11,7 @@ const Card: React.FC<SkillCardProps> = ({ name, link, color }) => {
   return (
     <div className="cardContainer animate">
       <ScrollAnimation />
-      <div className="border" style={{ backgroundColor: color }}>
+      <div className="skill-border" style={{ backgroundColor: color }}>
         <img className="cardImg" src={link} alt="logo" />
       </div>
       <h4 className="ml-4">{name}</h4>
