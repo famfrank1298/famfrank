@@ -51,11 +51,11 @@ export default function Projects() {
           desc="Filter through the City of Chicago Car Crash database and check the weather at a given latitude and longitude"
           date={shortDate ? "Sep 2022" : "September 2022"}
           stack="Replit, Javascript, Google Maps API"
-          webLink="https://da1c761d-1709-460b-a4f5-f4c44b1d02e5-00-3d9m45rr6e7t1.janeway.replit.dev/"
+          webLink="https://famfrank1298.github.io/C.C-Tracker-and-Weather/"
           shortDesc="Car Crash and Weather Tracker"
         />
       </div>
-      {/* <h1 className="section-title">Games</h1>
+      <h1 className="section-title">Games</h1>
       <hr className="border-line" />
       <div className="project-grid">
         <Card
@@ -64,11 +64,11 @@ export default function Projects() {
           desc="Mini Arrow Game where you collect the dragon balls while avoiding obstacles"
           date={shortDate ? "Oct 2022" : "October 2022"}
           stack="Replit, Javascript, CSS"
-          webLink="https://39ad4065-11e9-44d0-a4f9-173a87f5c2ba-00-nmqmmjuasa8l.kirk.replit.dev/"
+          webLink="https://famfrank1298.github.io/Dragon_Ball_Game/"
           isGame={true}
           shortDesc="Mini Arrow Game"
         />
-      </div> */}
+      </div>
     </div>
   );
 }
