@@ -29,7 +29,7 @@ export default function Navbar() {
         <HoverCardContent className="w-60 flex justify-start">
           <div className="hover-logo text-center">
             <p>
-              My full name initials are <b>F.A.M</b> (Frank Antwi Mensah)😎
+              Frank Antwi Mensah so <b>F.A.M</b> for short 😎
             </p>
           </div>
         </HoverCardContent>
