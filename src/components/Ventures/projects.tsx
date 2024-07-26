@@ -4,6 +4,7 @@ import "./projects.css";
 
 export default function Projects() {
   const shortDate = useMediaQuery("(max-width: 880px)");
+  const isTablet = useMediaQuery("(min-width: 750px)");
 
   return (
     <div id="projects">
@@ -45,30 +46,42 @@ export default function Projects() {
           stack="React, Javascript, Supabase"
           shortDesc="GeoGuesser with AI Assistance"
         />
-        <Card
-          title="Car Crash Tracker"
-          imgLink="/projectSC/cct_sc.png"
-          desc="Filter through the City of Chicago Car Crash database and check the weather at a given latitude and longitude"
-          date={shortDate ? "Sep 2022" : "September 2022"}
-          stack="Replit, Javascript, Google Maps API"
-          webLink="https://famfrank1298.github.io/C.C-Tracker-and-Weather/"
-          shortDesc="Car Crash and Weather Tracker"
-        />
+        {isTablet ? (
+          <div>
+            <Card
+              title="Car Crash Tracker"
+              imgLink="/projectSC/cct_sc.png"
+              desc="Filter through the City of Chicago Car Crash database and check the weather at a given latitude and longitude"
+              date={shortDate ? "Sep 2022" : "September 2022"}
+              stack="Replit, Javascript, Google Maps API"
+              webLink="https://famfrank1298.github.io/C.C-Tracker-and-Weather/"
+              shortDesc="Car Crash and Weather Tracker"
+            />
+          </div>
+        ) : (
+          <></>
+        )}
       </div>
-      <h1 className="section-title">Games</h1>
-      <hr className="border-line" />
-      <div className="project-grid">
-        <Card
-          title="Collect `Em All"
-          imgLink="/projectSC/dbz_sc.png"
-          desc="Mini Arrow Game where you collect the dragon balls while avoiding obstacles"
-          date={shortDate ? "Oct 2022" : "October 2022"}
-          stack="Replit, Javascript, CSS"
-          webLink="https://famfrank1298.github.io/Dragon_Ball_Game/"
-          isGame={true}
-          shortDesc="Mini Arrow Game"
-        />
-      </div>
+      {isTablet ? (
+        <div>
+          <h1 className="section-title">Games</h1>
+          <hr className="border-line" />
+          <div className="project-grid">
+            <Card
+              title="Collect `Em All"
+              imgLink="/projectSC/dbz_sc.png"
+              desc="Simple mini arrow game where you collect the dragon balls while avoiding obstacles"
+              date={shortDate ? "Oct 2022" : "October 2022"}
+              stack="Replit, Javascript, CSS"
+              webLink="https://famfrank1298.github.io/Dragon_Ball_Game/"
+              isGame={true}
+              shortDesc="Mini Arrow Game"
+            />
+          </div>
+        </div>
+      ) : (
+        <></>
+      )}
     </div>
   );
 }
