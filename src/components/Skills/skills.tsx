@@ -78,6 +78,11 @@ export default function Skills() {
             link="/icons/supabase.png"
             color="rgba(35,178,68,0.5)"
           />
+          <Card
+            name="Firebase"
+            link="/icons/firebase.png"
+            color="rgba(246,131,4,0.5)"
+          ></Card>
         </ul>
       </div>
       <div className="skill-group">
