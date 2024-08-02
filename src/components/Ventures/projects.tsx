@@ -16,9 +16,18 @@ export default function Projects() {
           imgLink="/projectSC/portfolio_sc.png"
           desc="I'm happy to say this but you are on it right now!"
           date="July 2024"
-          stack="NextJS, Typescript, Shadcn/UI"
+          stack="Next.js, Google Analytics, Shadcn/UI"
           shortDesc="You are on it! :)"
           webLink="https://famfrank.vercel.app/"
+        />
+        <Card
+          title="Pantry Tracker"
+          imgLink="/projectSC/pantry_sc.png"
+          desc="Track, manage, and update your pantry inventory with CRUD operations, ensuring you never lose track of your food items."
+          date="July 2024"
+          stack="Next.js, Firebase, Material UI"
+          shortDesc="Manage pantry inventory with CRUD operations"
+          webLink="https://pantrytracker-mu.vercel.app/"
         />
         <Card
           title="Find Your Roof"
