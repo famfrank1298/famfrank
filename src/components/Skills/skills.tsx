@@ -58,6 +58,11 @@ export default function Skills() {
             link="/icons/nextjs.png"
             color="rgba(100,100,100,0.5)"
           />
+          <Card
+            name="Material UI"
+            link="/icons/mui.png"
+            color="rgba(0,178,255,0.5)"
+          ></Card>
         </ul>
       </div>
       <div className="skill-group">
