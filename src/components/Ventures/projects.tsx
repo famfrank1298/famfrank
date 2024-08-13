@@ -12,6 +12,16 @@ export default function Projects() {
       <hr className="border-line" />
       <div className="project-grid">
         <Card
+          title="FamFinance AI Chatbot"
+          imgLink="/projectSC/famfinance_sc.png"
+          desc="Created an AI chatbot for investment support, using NLP for precise responses and Firebase for secure user authentication."
+          date={shortDate ? "Aug 2024" : "August 2024"}
+          stack="Next.js, Firebase, OpenAI"
+          shortDesc="AI-powered chatbot for investment support"
+          webLink="https://famfinacechatbot.vercel.app/"
+          gitLink="https://github.com/famfrank1298/chatbot"
+        />
+        <Card
           title="Portfolio Website"
           imgLink="/projectSC/portfolio_sc.png"
           desc="I'm happy to say...you are on it right now!"
@@ -20,16 +30,6 @@ export default function Projects() {
           shortDesc="You are on it! :)"
           webLink="https://famfrank.vercel.app/"
           gitLink="https://github.com/famfrank1298/famfrank"
-        />
-        <Card
-          title="FamFinance AI Chatbot"
-          imgLink="/projectSC/famfinance_sc.png"
-          desc="Created an AI chatbot for investment support, using NLP for precise responses and Firebase for secure user authentication."
-          date="July 2024"
-          stack="Next.js, Firebase, OpenAI"
-          shortDesc="AI-powered chatbot for investment support"
-          webLink="https://famfinacechatbot.vercel.app/"
-          gitLink="https://github.com/famfrank1298/chatbot"
         />
         <Card
           title="Pantry Tracker"
