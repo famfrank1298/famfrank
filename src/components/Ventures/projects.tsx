@@ -14,11 +14,20 @@ export default function Projects() {
         <Card
           title="Portfolio Website"
           imgLink="/projectSC/portfolio_sc.png"
-          desc="I'm happy to say this but you are on it right now!"
+          desc="I'm happy to say...you are on it right now!"
           date="July 2024"
           stack="Next.js, Google Analytics, Shadcn/UI"
           shortDesc="You are on it! :)"
           webLink="https://famfrank.vercel.app/"
+        />
+        <Card
+          title="FamFinance AI Chatbot"
+          imgLink="/projectSC/famfinance_sc.png"
+          desc="Created an AI chatbot for investment support, using NLP for precise responses and Firebase for secure user authentication."
+          date="July 2024"
+          stack="Next.js, Firebase, OpenAI"
+          shortDesc="AI-powered chatbot for investment support"
+          webLink="https://famfinacechatbot.vercel.app/"
         />
         <Card
           title="Pantry Tracker"
