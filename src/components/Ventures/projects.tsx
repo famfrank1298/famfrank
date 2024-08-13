@@ -18,7 +18,7 @@ export default function Projects() {
           date={shortDate ? "Aug 2024" : "August 2024"}
           stack="Next.js, Firebase, OpenAI"
           shortDesc="AI-powered chatbot for investment support"
-          webLink="https://famfinacechatbot.vercel.app/"
+          webLink="https://famfinancechatbot.vercel.app/"
           gitLink="https://github.com/famfrank1298/chatbot"
         />
         <Card
