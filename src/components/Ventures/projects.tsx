@@ -19,6 +19,7 @@ export default function Projects() {
           stack="Next.js, Google Analytics, Shadcn/UI"
           shortDesc="You are on it! :)"
           webLink="https://famfrank.vercel.app/"
+          gitLink="https://github.com/famfrank1298/famfrank"
         />
         <Card
           title="FamFinance AI Chatbot"
@@ -28,6 +29,7 @@ export default function Projects() {
           stack="Next.js, Firebase, OpenAI"
           shortDesc="AI-powered chatbot for investment support"
           webLink="https://famfinacechatbot.vercel.app/"
+          gitLink="https://github.com/famfrank1298/chatbot"
         />
         <Card
           title="Pantry Tracker"
@@ -37,6 +39,7 @@ export default function Projects() {
           stack="Next.js, Firebase, Material UI"
           shortDesc="Manage pantry inventory with CRUD operations"
           webLink="https://pantrytracker-mu.vercel.app/"
+          gitLink="https://github.com/famfrank1298/pantry_tracker"
         />
         <Card
           title="Find Your Roof"
@@ -55,6 +58,7 @@ export default function Projects() {
           stack="Next.js, Typescript, Tailwind CSS"
           webLink="https://omegadeltaphi-bi.vercel.app/"
           shortDesc="Beta Iota Fraternity Website"
+          gitLink="https://github.com/famfrank1298/ODPHI_BI"
         />
         <Card
           title="Maps with Friends"
@@ -74,6 +78,7 @@ export default function Projects() {
               stack="Replit, Javascript, Google Maps API"
               webLink="https://famfrank1298.github.io/C.C-Tracker-and-Weather/"
               shortDesc="Car Crash and Weather Tracker"
+              gitLink="https://github.com/famfrank1298/C.C-Tracker-and-Weather"
             />
           </div>
         ) : (
@@ -94,6 +99,7 @@ export default function Projects() {
               webLink="https://famfrank1298.github.io/Dragon_Ball_Game/"
               isGame={true}
               shortDesc="Mini Arrow Game"
+              gitLink="https://github.com/famfrank1298/Dragon_Ball_Game"
             />
           </div>
         </div>

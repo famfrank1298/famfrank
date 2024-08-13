@@ -11,6 +11,7 @@ interface ProjectCardProps {
   webLink?: string;
   isGame?: boolean;
   shortDesc: string;
+  gitLink?: string;
 }
 
 const Card: React.FC<ProjectCardProps> = ({
@@ -22,6 +23,7 @@ const Card: React.FC<ProjectCardProps> = ({
   webLink,
   isGame,
   shortDesc,
+  gitLink,
 }) => {
   const link = webLink ? "Website" : "No Link";
   const shortenDesc = useMediaQuery("(max-width: 800px)");
@@ -30,7 +32,19 @@ const Card: React.FC<ProjectCardProps> = ({
   return (
     <div className="card-container animate">
       <ScrollAnimation />
-      <h3 className="text-center mb-2">{title}</h3>
+      <div className="text-center mb-2 flex items-center justify-center gap-5">
+        <h3>{title}</h3>
+        {gitLink ? (
+          <a href={gitLink} target="_blank" className="git-hover">
+            <img
+              src="/icons/github.png"
+              className="w-10 h-auto bg-[rgba(100,100,100,0.5)] rounded"
+            ></img>
+          </a>
+        ) : (
+          <></>
+        )}
+      </div>
       <div className="image-border">
         <div className="desc">
           <p>
