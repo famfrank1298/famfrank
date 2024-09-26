@@ -24,7 +24,7 @@ export default function Projects() {
         <Card
           title="Portfolio Website"
           imgLink="/projectSC/portfolio_sc.png"
-          desc="I'm happy to say...you are on it right now!"
+          desc="I'm pleased to inform you that you are on it right now!"
           date="July 2024"
           stack="Next.js, Google Analytics, Shadcn/UI"
           shortDesc="You are on it! :)"
