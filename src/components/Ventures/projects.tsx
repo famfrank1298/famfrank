@@ -12,6 +12,16 @@ export default function Projects() {
       <hr className="border-line" />
       <div className="project-grid">
         <Card
+          title="RYB Premier"
+          imgLink="/projectSC/ryb_sc.png"
+          desc="Launched RYB Premier LLC's debut website, seamlessly integrating Calendly scheduling, EmailJS communication, and Stripe payments."
+          date={shortDate ? "Dec 2024" : "December 2024"}
+          stack="Next.js, Shadcn/UI, Vercel Analytics"
+          shortDesc="RYB Premier LLC's inaugural website for finance"
+          webLink="https://rybpremier.vercel.app/"
+          gitLink="https://github.com/famfrank1298/ryb"
+        />
+        <Card
           title="FamFinance AI Chatbot"
           imgLink="/projectSC/famfinance_sc.png"
           desc="Created an AI chatbot for investment support, using NLP for precise responses and Firebase for secure user authentication."
