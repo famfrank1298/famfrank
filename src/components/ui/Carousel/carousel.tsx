@@ -34,6 +34,13 @@ export function CarouselRoad() {
       logo: "/logos/headstarter_logo.png",
       desc: "Built multiple AI centric applications and received coaching from many well established individuals in the field",
     },
+    {
+      company: "Skillstorm",
+      position: "Associate Salesforce Developer",
+      duration: "January 2025 - Present",
+      logo: "/logos/skillstorm_logo.png",
+      desc: "Utilized Salesforce Experience Cloud, LWC, and automation tools to develop customer-facing platforms, streamline claims processing, and enhance data management through customized workflows and reporting.",
+    },
   ];
   return (
     <Carousel className="carousel-container">
@@ -43,9 +50,9 @@ export function CarouselRoad() {
             <div className="p-1">
               <Card className="card-div">
                 <CardContent className="card-tag">
-                  <img src={exp[index].logo} className="image-tag" />
                   <h3 className="position-tag">{exp[index].position}</h3>
-                  <p className="company-tag">{exp[index].company}</p>
+                  {/* <p className="company-tag">{exp[index].company}</p> */}
+                  <img src={exp[index].logo} className="image-tag" />
                   <p className="date-tag">{exp[index].duration}</p>
                   <p className="desc-tag">{exp[index].desc}</p>
                 </CardContent>

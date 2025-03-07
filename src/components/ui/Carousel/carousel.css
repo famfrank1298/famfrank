@@ -31,21 +31,6 @@
   }
 }
 
-.card-div:hover .date-tag {
-  font-size: var(--fontSizeXLarge);
-  animation: bigDate 1s ease-in-out;
-}
-
-@keyframes bigDate {
-  0% {
-    font-size: var(--fontSizeLarge);
-  }
-
-  100% {
-    font-size: var(--fontSizeXLarge);
-  }
-}
-
 .card-tag {
   padding: 3rem;
   text-align: center;
@@ -77,9 +62,7 @@
 .image-tag {
   border-radius: 100vh;
   width: 40%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1rem;
+  margin: 1rem auto;
 }
 
 /* Media Queries */

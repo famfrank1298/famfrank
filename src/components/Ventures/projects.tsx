@@ -12,6 +12,15 @@ export default function Projects() {
       <hr className="border-line" />
       <div className="project-grid">
         <Card
+          title="VeteranCare"
+          imgLink="/projectSC/veterancare_sc.png"
+          desc="Built an Experience Cloud site with Apex and Lightning Web Components, allowing veterans to manage claims, appeals, and benefits seamlessly."
+          date={shortDate ? "Feb 2025" : "February 2025"}
+          stack="Salesforce, LWC, Apex"
+          shortDesc="Veterans' claims and appeals management Experience Cloud site."
+          gitLink="https://github.com/dylanyeung/VeteranCare-Claims-Portal"
+        />
+        <Card
           title="RYB Premier"
           imgLink="/projectSC/ryb_sc.png"
           desc="Launched RYB Premier LLC's debut website, seamlessly integrating Calendly scheduling, EmailJS communication, and Stripe payments."

@@ -177,7 +177,7 @@ body {
 .animate {
   opacity: 0;
   transform: translateY(50px);
-  transition: opacity 2s ease-out, transform 1s ease-out;
+  transition: opacity 1.2s ease-out, transform 1s ease-out;
 }
 
 .animate.visible {
