@@ -14,7 +14,7 @@ export default function Projects() {
         <Card
           title="VeteranCare"
           imgLink="/projectSC/veterancare_sc.png"
-          desc="Built an Experience Cloud site with Apex and Lightning Web Components, allowing veterans to manage claims, appeals, and benefits seamlessly."
+          desc="Built a Salesforce Experience Cloud site with Apex and LWCs, allowing veterans to manage claims, appeals, and benefits seamlessly."
           date={shortDate ? "Feb 2025" : "February 2025"}
           stack="Salesforce, LWC, Apex"
           shortDesc="Veterans' claims and appeals management Experience Cloud site."
