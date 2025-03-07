@@ -27,7 +27,7 @@ export default function Hero() {
           web applications through innovation and collaboration.
         </h4>
         <Button className="resumeBtn">
-          <a href="/Mensah_Resume.pdf" target="_blank">
+          <a href="/Mensah_Frank.pdf" target="_blank">
             <h3>★ Resume ★</h3>
           </a>
         </Button>
