@@ -114,6 +114,11 @@ export default function Skills() {
             link="/icons/postman.png"
             color="rgba(255,148,24,0.5)"
           />
+          <Card
+            name="Blue Prism"
+            link="/icons/blueprism.png"
+            color="rgba(41,182,246,0.5)"
+          />
         </ul>
       </div>
       <div className="skill-group">

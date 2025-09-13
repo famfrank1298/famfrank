@@ -37,9 +37,16 @@ export function CarouselRoad() {
     {
       company: "Skillstorm",
       position: "Associate Salesforce Developer",
-      duration: "January 2025 - Present",
+      duration: "January 2025 - May 2025",
       logo: "/logos/skillstorm_logo.png",
       desc: "Utilized Salesforce Experience Cloud, LWC, and automation tools to develop customer-facing platforms, streamline claims processing, and enhance data management through customized workflows and reporting.",
+    },
+    {
+      company: "Deloitte",
+      position: "RPA Support Operations",
+      duration: "May 2025 - Present",
+      logo: "/logos/deloitte_logo.png",
+      desc: "Oversaw RPA bot operations, monitored performance, resolved production issues, and optimized automation workflows to improve efficiency, reliability, and business continuity.",
     },
   ];
   return (
